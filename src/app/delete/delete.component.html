@@ -1,0 +1,21 @@
+<tr *ngFor="let student of _empp">
+  <td>{{student.id}}</td>
+  <td>{{ student.first_name }}</td>
+  <td>{{ student.last_name }}</td>
+  <!-- <td><button class="btn btn-primary" (click)="open(student.id, content)">UPDATE</button></td> -->
+  <td><button class="btn btn-danger" (click)="deleteStudent(student.id)">DELETE</button></td>
+</tr> 
+
+<tr *ngFor="let data of user">
+  <td> {{ data.id }} </td>
+
+  <td> {{ data.first_name }} </td>
+  <td> {{ data.last_name }} </td>
+  <td> {{ data.dob }} </td>
+  <td>
+      <!-- <button (click) = "updateUser(user.id)" class="btn btn-info">Update</button> -->
+      <button (click) = "deleteUser(data.id)" >Delete</button>
+  </td>
+</tr>
+
+

@@ -1,0 +1,32 @@
+<h1>Employee Details</h1>
+<div >
+<div  class="one">
+<table *ngFor="let data of details" border="1"  >
+    
+  <td>  {{data.id}}</td>
+    <td (click)="opendata(data) "  (click)="getsearch()">{{data.first_name}}</td>
+    
+    <!-- <a href="#" (click)="opendata()">{{data.first_name}}</a> -->
+
+</table>
+</div>
+
+ <div class="one">
+
+    <table border="1" *ngFor ="let x of user " >
+        <td>{{x.first_name}}</td>
+    <td>{{x.last_name}}</td>
+    <td>{{x.skills}}</td>
+    <td>{{x.dob}}</td>
+    <td>{{x.qualification}}</td>
+</table>
+</div>
+<br>
+<button (click) = "registerr()" >Register</button>
+
+<BR>
+    <br>
+
+<button (click) = "delete()" >Delete</button>
+
+</div>
